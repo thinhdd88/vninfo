@@ -1,0 +1,108 @@
+.destination-banner {
+	background-attachment: fixed;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 30px;
+	img {
+		display: none;
+	}
+	.destination-title {
+		padding: 20px 0;
+		position: absolute;
+		bottom: 0;
+		left: 0;
+		right: 0;
+		background: -moz-linear-gradient(top, rgba(0,0,0,0) 30%, rgba(0,0,0,0.45) 100%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, rgba(0,0,0,0) 30%,rgba(0,0,0,0.45) 100%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, rgba(0,0,0,0) 30%,rgba(0,0,0,0.45) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+	}
+	h1 {
+		color: #fff;
+	}
+}
+
+.list-destination {
+	box-shadow: rgba(0, 0, 0, 0.12) 0px 1px 6px, rgba(0, 0, 0, 0.12) 0px 1px 4px;
+	padding: 10px;
+	position: relative;
+	li{
+		margin-bottom: 5px;
+	}
+	a{
+		display: block;
+		padding: 5px 20px 5px 10px;
+		line-height: 30px;
+		transition: all .3s;
+		color: #333;
+		position: relative;
+		img {
+			position: absolute;
+			z-index: 2;
+			right: 15px;
+			top: 5px;
+			opacity: .3;
+			transition: all .3s;
+		}
+		&:hover, &:focus, &.active {
+			padding-left: 15px;
+			text-decoration: none;
+			background-color: #eee;
+			img{
+				opacity: 1;
+			}
+		}
+	}
+}
+
+#map {
+  height: 300px;
+  width: 100%;
+}
+
+.attraction-map {
+	margin: 30px 0;
+}
+
+.list-attraction {
+	margin-top: 30px;
+	li{
+		.content {
+			cursor: pointer;
+			overflow: hidden;
+			position: relative;
+		}
+
+		h3{
+			font-size: 14px;
+			font-weight: 700;
+		    position: absolute;
+		    bottom: 0;
+		    left: 0;
+		    right: 0;
+		    padding: 10px 5px;
+		    margin: 0;
+		    color: #fff;
+		    background: -moz-linear-gradient(top, rgba(0,0,0,0) 30%, rgba(0,0,0,0.65) 100%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, rgba(0,0,0,0) 30%,rgba(0,0,0,0.65) 100%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, rgba(0,0,0,0) 30%,rgba(0,0,0,0.65) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#a6000000',GradientType=0 ); /* IE6-9 */
+		}
+
+		img {
+		    transition: .3s ease-in-out;
+		    opacity: .9;
+		}
+
+		&:hover, &.active {
+			img {
+				transform: scale(1.1);
+				opacity: 1;
+			}
+		}
+	}
+}

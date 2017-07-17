@@ -1,0 +1,26 @@
+footer, header {
+	.navbar {
+		margin-bottom: 0;
+		background-color: @color-main;
+		border: none;
+		border-radius: 0; 
+		.navbar-nav {
+			> li {
+				margin-right: 5px;
+				> a {
+					color: #fff;
+					&:hover, &:focus {
+						color: #fff;
+					}
+					&:hover, &.active{
+					    background: rgba(0,0,0,0.1);
+					}
+				}
+			}
+		}
+	}
+}
+
+#app{
+	padding-top: 52px;
+}
