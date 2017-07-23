@@ -36,7 +36,6 @@ class DestinationPage extends Component {
     }
 
     render() {
-        console.log(this.state.destination);
         if(this.state.destination[0]){
             return ( 
                 <Destination detail={this.state.destination[0]} /> 

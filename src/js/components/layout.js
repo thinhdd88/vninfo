@@ -25,6 +25,7 @@ const Spinner = () => (
 
 class Layout extends Component {
 	render() {
+        console.log(this.props.children.props.route);
 	    return (
 	      <div>
 	        <Header />

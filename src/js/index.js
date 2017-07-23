@@ -15,8 +15,8 @@ ReactDOM.render(
 	<Router history={browserHistory}>
 		<Route path="/" component={Layout}>
   			<IndexRoute component={Home}></IndexRoute>
-          	<Route path="/content/:pageName" component={PageDetail}/>
-          	<Route path="/destination/:slug" component={DestinationPage}/>
+          	<Route path="/content/:pageName" title="213132" component={PageDetail}/>
+          	<Route path="/destination/:slug" title="adsads" component={DestinationPage}/>
 		</Route>
     </Router> ,
   document.getElementById('app')
